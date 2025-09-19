@@ -12,6 +12,12 @@
         <li class="nav-item">
           <router-link to="/about" class="nav-link" active-class="active">About</router-link>
         </li>
+        <li class="nav-item">
+          <router-link to="/Firelogin" class="nav-link" active-class="active">Firebase login</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/addbook" class="nav-link" active-class="active">add book</router-link>
+        </li>
       </ul>
     </header>
   </div>

@@ -1,15 +1,35 @@
-import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '@/views/HomeView.vue';
-import AboutView from '@/views/AboutView.vue';
+import { createRouter, createWebHistory } from 'vue-router'
+import HomeView from '../views/HomeView.vue'
+import AboutView from '../views/AboutView.vue'
+import FirebaseSigninView from '@/views/FirebaseSigninView.vue'
+import AddBookView from '@/views/AddBookView.vue'
 
 const routes = [
-  { path: '/', name: 'home', component: HomeView },
-  { path: '/about', name: 'about', component: AboutView }
-];
+  {
+    path: '/',
+    name: 'Home',
+    component: HomeView
+  },
+  {
+    path: '/about',
+    name: 'About',
+    component: AboutView
+  },
+  {
+    path: '/Firelogin',
+    name: 'Firelogin',
+    component: FirebaseSigninView
+  },
+   {
+    path: '/addbook',
+    name: 'addbook',
+    component: AddBookView
+  }
+]
 
 const router = createRouter({
   history: createWebHistory(),
   routes
-});
+})
 
-export default router;
+export default router
